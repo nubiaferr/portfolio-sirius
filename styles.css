@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Roboto:ital,wght@0,400;0,900;1,400&display=swap");
+
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+/* 
+Preto #262322
+Azul #587792
+Cinza #f3f5e9
+Rosa pink #B6174B 
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Montserrat", sans-serif;
+  color: #b6174b;
+}
+
+p,
+li {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #262322;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Menu */
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px 80px;
+  background-color: #587792;
+  position: fixed;
+  top: 0;
+}
+
+.menu h2 {
+  color: #f3f5e9;
+}
+
+.menu h2:hover {
+  color: #b6174b;
+}
+
+.menu h3 {
+  color: #b6174b;
+}
+
+.menu h3:hover {
+  color: #f3f5e9;
+}
+
+/* Perfil */
+.intro {
+  width: 900px;
+  display: flex;
+  justify-content: center;
+  border: 2px solid #b6174b;
+  padding: 20px;
+  gap: 40px;
+  box-shadow: 0px 0px 11px 0px rgba(182, 23, 75, 0.8);
+  margin: 140px 0 70px 0;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.textos {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.textos ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: inside;
+}
+
+.redes {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+}
+
+.icon:hover {
+  transform: rotate(45deg);
+}
+
+/* Portfolio */
+.portfolio {
+  gap: 25px;
+}
+
+.cards {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 300px;
+  height: 100%;
+}
+
+.card-img {
+  height: 180px;
+}
+
+.card-corpo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  box-shadow: 0px 0px 11px 0px rgba(182, 23, 75, 0.8);
+  border: 2px solid #b6174b;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.card-textos {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Rodapé */
+footer {
+  width: 100%;
+  height: 50px;
+  background-color: #587792;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 800px) {
+  .menu {
+    flex-direction: column;
+  }
+
+  .intro {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .intro h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .cards {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
